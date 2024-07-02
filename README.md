@@ -1,5 +1,5 @@
 【ICML-2023 FE-GNN】[Feature Expansion for Graph Neural Networks](https://proceedings.mlr.press/v202/sun23p/sun23p.pdf)
-<img src="https://github.com/XiaShan1227/FE-GNN/assets/67092235/df136c26-7353-44ac-99b0-f1dbaa9ec936" alt="Image" width="600" height="600">
+<img src="https://github.com/XiaShan1227/FE-GNN/assets/67092235/df136c26-7353-44ac-99b0-f1dbaa9ec936" alt="Image" width="800" height="600">
 
 ### 1.Environment
 ```bash
