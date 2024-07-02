@@ -23,7 +23,7 @@ def parameter_parser():
     parser.add_argument('--weight_decay', type=float, default=0.0001, help='Weight decay of L2 penalty')
     parser.add_argument('--epochs', type=int, default=1000, help='Epochs of training')
     parser.add_argument('--runs', type=int, default=10, help='Runs to train')
-    parser.add_argument('--patience', type=int, default=10, help='Patience for early stop')
+    parser.add_argument('--patience', type=int, default=200, help='Patience for early stop')
 
     # 模型
     parser.add_argument('--nx', type=int, default=-1, help='Rank of singular value decomposition of node feature matrix, defaulting to -1: Use the node feature dimension')

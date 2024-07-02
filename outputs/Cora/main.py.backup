@@ -51,8 +51,6 @@ def one_run(args, IO, seed, run, bar):
     best_val_loss = 99999
     val_loss_history = []
 
-    patience = 0
-
     for epoch in range(args.epochs):
         bar.set_description('Run:{:2d}, Epoch:{:4d}'.format(run, epoch))
 
@@ -94,19 +92,17 @@ def one_run(args, IO, seed, run, bar):
             best_val_acc = val_acc
             best_test_acc = test_acc
             best_epoch = epoch
-            patience = 0
-        else:
-            patience +=1
 
-        if patience > args.patience:
-            runtime = time.time() - start_time
-            epoch_time = runtime / (epoch + 1)
-            IO.cprint('Average running time of epoch: {:.4f} seconds'.format(epoch_time))
-            IO.cprint('Current epoch %d for run %d: val_loss: %.4f, val_acc: %.4f, test_acc %.4f'
-                       % (epoch, run, val_loss, val_acc, test_acc))
-            IO.cprint('Best epoch %d for run %d: val_loss: %.4f, val_acc: %.4f, test_acc %.4f'
-                       % (best_epoch, run, best_val_loss, best_val_acc, best_test_acc))
-            break
+        if epoch > args.patience:
+            if val_loss > torch.tensor(val_loss_history[-(args.patience + 1):-1]).mean().item(): # 将当前的val_loss 与 其前200个val_loss均值作比较
+                runtime = time.time() - start_time
+                epoch_time = runtime / (epoch + 1)
+                IO.cprint('Average running time of epoch: {:.4f} seconds'.format(epoch_time))
+                IO.cprint('Current epoch %d for run %d: val_loss: %.4f, val_acc: %.4f, test_acc %.4f'
+                           % (epoch, run, val_loss, val_acc, test_acc))
+                IO.cprint('Best epoch %d for run %d: val_loss: %.4f, val_acc: %.4f, test_acc %.4f'
+                           % (best_epoch, run, best_val_loss, best_val_acc, best_test_acc))
+                break
 
     return best_test_acc.item(), best_val_acc.item()
 
@@ -155,3 +151,4 @@ if __name__ == "__main__":
         val_acc_mean = torch.Tensor(val_accs).mean().item()
 
         IO.cprint('Average Accuracy for {:s}: Test_Acc:{:.4f}, Val_Acc:{:.4f}'.format(args.dataset, test_acc_mean, val_acc_mean))
+        print('Average Accuracy for {:s}: Test_Acc:{:.4f}, Val_Acc:{:.4f}'.format(args.dataset, test_acc_mean, val_acc_mean))
