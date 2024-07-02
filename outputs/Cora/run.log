@@ -1,0 +1,532 @@
++--------------+--------+
+|  Parameter   | Value  |
++==============+========+
+| Dataset      | Cora   |
++--------------+--------+
+| Epochs       | 1000   |
++--------------+--------+
+| Exp name     | Cora   |
++--------------+--------+
+| Gpu index    | 0      |
++--------------+--------+
+| Init lr      | 0.01   |
++--------------+--------+
+| K            | 2      |
++--------------+--------+
+| Momentum     | 0.9    |
++--------------+--------+
+| Nhid         | 64     |
++--------------+--------+
+| Nl           | 50     |
++--------------+--------+
+| Nlx          | -1     |
++--------------+--------+
+| Nx           | -1     |
++--------------+--------+
+| Operator     | gpr    |
++--------------+--------+
+| Optimizer    | Adam   |
++--------------+--------+
+| Patience     | 10     |
++--------------+--------+
+| Runs         | 10     |
++--------------+--------+
+| Share lx     | False  |
++--------------+--------+
+| Weight decay | 0.0001 |
++--------------+--------+
+
+Run: 0
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9446, val_loss=1.8686, test_loss=1.8649, train_acc=0.1429, val_acc=0.5160, test_acc=0.5300
+Epoch 1: train_loss=1.6623, val_loss=1.7809, test_loss=1.7730, train_acc=0.9786, val_acc=0.6460, test_acc=0.6500
+Epoch 2: train_loss=1.3507, val_loss=1.6800, test_loss=1.6667, train_acc=1.0000, val_acc=0.6880, test_acc=0.7180
+Epoch 3: train_loss=1.0231, val_loss=1.5655, test_loss=1.5502, train_acc=1.0000, val_acc=0.6980, test_acc=0.7110
+Epoch 4: train_loss=0.7193, val_loss=1.4451, test_loss=1.4280, train_acc=1.0000, val_acc=0.7020, test_acc=0.7140
+Epoch 5: train_loss=0.4703, val_loss=1.3317, test_loss=1.3156, train_acc=1.0000, val_acc=0.7060, test_acc=0.7060
+Epoch 6: train_loss=0.2870, val_loss=1.2333, test_loss=1.2177, train_acc=1.0000, val_acc=0.7060, test_acc=0.7010
+Epoch 7: train_loss=0.1642, val_loss=1.1616, test_loss=1.1441, train_acc=1.0000, val_acc=0.6960, test_acc=0.6910
+Epoch 8: train_loss=0.0912, val_loss=1.1024, test_loss=1.0852, train_acc=1.0000, val_acc=0.6900, test_acc=0.6860
+Epoch 9: train_loss=0.0494, val_loss=1.0631, test_loss=1.0427, train_acc=1.0000, val_acc=0.6900, test_acc=0.6870
+Epoch 10: train_loss=0.0270, val_loss=1.0364, test_loss=1.0154, train_acc=1.0000, val_acc=0.6840, test_acc=0.6800
+Epoch 11: train_loss=0.0149, val_loss=1.0208, test_loss=0.9965, train_acc=1.0000, val_acc=0.6840, test_acc=0.6780
+Epoch 12: train_loss=0.0085, val_loss=1.0159, test_loss=0.9867, train_acc=1.0000, val_acc=0.6840, test_acc=0.6670
+Epoch 13: train_loss=0.0050, val_loss=1.0113, test_loss=0.9772, train_acc=1.0000, val_acc=0.6800, test_acc=0.6650
+Epoch 14: train_loss=0.0030, val_loss=1.0113, test_loss=0.9730, train_acc=1.0000, val_acc=0.6820, test_acc=0.6590
+Epoch 15: train_loss=0.0020, val_loss=1.0159, test_loss=0.9752, train_acc=1.0000, val_acc=0.6760, test_acc=0.6590
+Epoch 16: train_loss=0.0013, val_loss=1.0183, test_loss=0.9739, train_acc=1.0000, val_acc=0.6840, test_acc=0.6590
+Epoch 17: train_loss=0.0009, val_loss=1.0225, test_loss=0.9769, train_acc=1.0000, val_acc=0.6840, test_acc=0.6570
+Epoch 18: train_loss=0.0007, val_loss=1.0332, test_loss=0.9851, train_acc=1.0000, val_acc=0.6800, test_acc=0.6570
+Epoch 19: train_loss=0.0005, val_loss=1.0311, test_loss=0.9821, train_acc=1.0000, val_acc=0.6800, test_acc=0.6560
+Epoch 20: train_loss=0.0004, val_loss=1.0422, test_loss=0.9923, train_acc=1.0000, val_acc=0.6760, test_acc=0.6550
+Epoch 21: train_loss=0.0003, val_loss=1.0418, test_loss=0.9877, train_acc=1.0000, val_acc=0.6800, test_acc=0.6570
+Epoch 22: train_loss=0.0003, val_loss=1.0529, test_loss=0.9995, train_acc=1.0000, val_acc=0.6740, test_acc=0.6580
+Epoch 23: train_loss=0.0002, val_loss=1.0515, test_loss=0.9948, train_acc=1.0000, val_acc=0.6800, test_acc=0.6600
+Epoch 24: train_loss=0.0002, val_loss=1.0552, test_loss=1.0001, train_acc=1.0000, val_acc=0.6800, test_acc=0.6570
+Epoch 25: train_loss=0.0002, val_loss=1.0530, test_loss=0.9989, train_acc=1.0000, val_acc=0.6760, test_acc=0.6550
+Average running time of epoch: 0.1482 seconds
+Current epoch 25 for run 0: val_loss: 1.0530, val_acc: 0.6760, test_acc 0.6550
+Best epoch 14 for run 0: val_loss: 1.0113, val_acc: 0.6820, test_acc 0.6590
+
+Run: 1
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9522, val_loss=1.8709, test_loss=1.8662, train_acc=0.1071, val_acc=0.5360, test_acc=0.5370
+Epoch 1: train_loss=1.6589, val_loss=1.7695, test_loss=1.7617, train_acc=0.9929, val_acc=0.6820, test_acc=0.6790
+Epoch 2: train_loss=1.3452, val_loss=1.6616, test_loss=1.6499, train_acc=0.9929, val_acc=0.7160, test_acc=0.7130
+Epoch 3: train_loss=1.0189, val_loss=1.5477, test_loss=1.5334, train_acc=1.0000, val_acc=0.7220, test_acc=0.7300
+Epoch 4: train_loss=0.7166, val_loss=1.4345, test_loss=1.4174, train_acc=1.0000, val_acc=0.7120, test_acc=0.7160
+Epoch 5: train_loss=0.4677, val_loss=1.3251, test_loss=1.3087, train_acc=1.0000, val_acc=0.7080, test_acc=0.7090
+Epoch 6: train_loss=0.2860, val_loss=1.2306, test_loss=1.2143, train_acc=1.0000, val_acc=0.6980, test_acc=0.7020
+Epoch 7: train_loss=0.1654, val_loss=1.1476, test_loss=1.1312, train_acc=1.0000, val_acc=0.6960, test_acc=0.7020
+Epoch 8: train_loss=0.0918, val_loss=1.0776, test_loss=1.0604, train_acc=1.0000, val_acc=0.7020, test_acc=0.6960
+Epoch 9: train_loss=0.0499, val_loss=1.0255, test_loss=1.0054, train_acc=1.0000, val_acc=0.7060, test_acc=0.6940
+Epoch 10: train_loss=0.0269, val_loss=0.9885, test_loss=0.9651, train_acc=1.0000, val_acc=0.7080, test_acc=0.6960
+Epoch 11: train_loss=0.0149, val_loss=0.9632, test_loss=0.9364, train_acc=1.0000, val_acc=0.7040, test_acc=0.6940
+Epoch 12: train_loss=0.0085, val_loss=0.9455, test_loss=0.9169, train_acc=1.0000, val_acc=0.7100, test_acc=0.6960
+Epoch 13: train_loss=0.0052, val_loss=0.9346, test_loss=0.9020, train_acc=1.0000, val_acc=0.7100, test_acc=0.6970
+Epoch 14: train_loss=0.0031, val_loss=0.9244, test_loss=0.8897, train_acc=1.0000, val_acc=0.7120, test_acc=0.7010
+Epoch 15: train_loss=0.0020, val_loss=0.9247, test_loss=0.8852, train_acc=1.0000, val_acc=0.7100, test_acc=0.7000
+Epoch 16: train_loss=0.0013, val_loss=0.9244, test_loss=0.8821, train_acc=1.0000, val_acc=0.7080, test_acc=0.6970
+Epoch 17: train_loss=0.0009, val_loss=0.9296, test_loss=0.8856, train_acc=1.0000, val_acc=0.7120, test_acc=0.6980
+Epoch 18: train_loss=0.0007, val_loss=0.9281, test_loss=0.8833, train_acc=1.0000, val_acc=0.7160, test_acc=0.6990
+Epoch 19: train_loss=0.0005, val_loss=0.9355, test_loss=0.8889, train_acc=1.0000, val_acc=0.7060, test_acc=0.6950
+Epoch 20: train_loss=0.0004, val_loss=0.9368, test_loss=0.8873, train_acc=1.0000, val_acc=0.7060, test_acc=0.6930
+Epoch 21: train_loss=0.0003, val_loss=0.9448, test_loss=0.8951, train_acc=1.0000, val_acc=0.7020, test_acc=0.6890
+Epoch 22: train_loss=0.0003, val_loss=0.9452, test_loss=0.8957, train_acc=1.0000, val_acc=0.7040, test_acc=0.6870
+Epoch 23: train_loss=0.0002, val_loss=0.9555, test_loss=0.9010, train_acc=1.0000, val_acc=0.7000, test_acc=0.6910
+Epoch 24: train_loss=0.0002, val_loss=0.9547, test_loss=0.9035, train_acc=1.0000, val_acc=0.7040, test_acc=0.6810
+Epoch 25: train_loss=0.0002, val_loss=0.9624, test_loss=0.9084, train_acc=1.0000, val_acc=0.7000, test_acc=0.6830
+Epoch 26: train_loss=0.0002, val_loss=0.9684, test_loss=0.9155, train_acc=1.0000, val_acc=0.6980, test_acc=0.6810
+Epoch 27: train_loss=0.0002, val_loss=0.9736, test_loss=0.9217, train_acc=1.0000, val_acc=0.6940, test_acc=0.6770
+Average running time of epoch: 0.0420 seconds
+Current epoch 27 for run 1: val_loss: 0.9736, val_acc: 0.6940, test_acc 0.6770
+Best epoch 16 for run 1: val_loss: 0.9244, val_acc: 0.7080, test_acc 0.6970
+
+Run: 2
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9498, val_loss=1.8579, test_loss=1.8551, train_acc=0.1000, val_acc=0.6060, test_acc=0.5970
+Epoch 1: train_loss=1.6622, val_loss=1.7784, test_loss=1.7713, train_acc=0.9857, val_acc=0.6540, test_acc=0.6390
+Epoch 2: train_loss=1.3472, val_loss=1.6757, test_loss=1.6646, train_acc=1.0000, val_acc=0.6940, test_acc=0.6970
+Epoch 3: train_loss=1.0154, val_loss=1.5610, test_loss=1.5451, train_acc=1.0000, val_acc=0.7080, test_acc=0.7000
+Epoch 4: train_loss=0.7121, val_loss=1.4409, test_loss=1.4214, train_acc=1.0000, val_acc=0.7120, test_acc=0.6980
+Epoch 5: train_loss=0.4624, val_loss=1.3207, test_loss=1.2995, train_acc=1.0000, val_acc=0.7200, test_acc=0.7080
+Epoch 6: train_loss=0.2792, val_loss=1.2231, test_loss=1.2007, train_acc=1.0000, val_acc=0.7260, test_acc=0.7010
+Epoch 7: train_loss=0.1601, val_loss=1.1397, test_loss=1.1157, train_acc=1.0000, val_acc=0.7180, test_acc=0.7010
+Epoch 8: train_loss=0.0890, val_loss=1.0836, test_loss=1.0571, train_acc=1.0000, val_acc=0.7220, test_acc=0.6950
+Epoch 9: train_loss=0.0482, val_loss=1.0400, test_loss=1.0112, train_acc=1.0000, val_acc=0.7260, test_acc=0.6950
+Epoch 10: train_loss=0.0261, val_loss=1.0116, test_loss=0.9786, train_acc=1.0000, val_acc=0.7220, test_acc=0.6980
+Epoch 11: train_loss=0.0145, val_loss=0.9941, test_loss=0.9576, train_acc=1.0000, val_acc=0.7180, test_acc=0.6950
+Epoch 12: train_loss=0.0083, val_loss=0.9869, test_loss=0.9454, train_acc=1.0000, val_acc=0.7140, test_acc=0.6980
+Epoch 13: train_loss=0.0049, val_loss=0.9820, test_loss=0.9376, train_acc=1.0000, val_acc=0.7140, test_acc=0.6960
+Epoch 14: train_loss=0.0030, val_loss=0.9825, test_loss=0.9355, train_acc=1.0000, val_acc=0.7140, test_acc=0.6930
+Epoch 15: train_loss=0.0020, val_loss=0.9851, test_loss=0.9327, train_acc=1.0000, val_acc=0.7180, test_acc=0.6940
+Epoch 16: train_loss=0.0013, val_loss=0.9955, test_loss=0.9411, train_acc=1.0000, val_acc=0.7140, test_acc=0.6880
+Epoch 17: train_loss=0.0009, val_loss=0.9949, test_loss=0.9394, train_acc=1.0000, val_acc=0.7080, test_acc=0.6850
+Epoch 18: train_loss=0.0007, val_loss=1.0113, test_loss=0.9504, train_acc=1.0000, val_acc=0.7060, test_acc=0.6810
+Epoch 19: train_loss=0.0005, val_loss=1.0060, test_loss=0.9477, train_acc=1.0000, val_acc=0.7080, test_acc=0.6840
+Epoch 20: train_loss=0.0004, val_loss=1.0125, test_loss=0.9515, train_acc=1.0000, val_acc=0.7020, test_acc=0.6810
+Epoch 21: train_loss=0.0003, val_loss=1.0192, test_loss=0.9589, train_acc=1.0000, val_acc=0.7000, test_acc=0.6770
+Epoch 22: train_loss=0.0003, val_loss=1.0265, test_loss=0.9647, train_acc=1.0000, val_acc=0.6980, test_acc=0.6820
+Epoch 23: train_loss=0.0003, val_loss=1.0291, test_loss=0.9682, train_acc=1.0000, val_acc=0.6920, test_acc=0.6770
+Epoch 24: train_loss=0.0002, val_loss=1.0337, test_loss=0.9720, train_acc=1.0000, val_acc=0.6900, test_acc=0.6810
+Average running time of epoch: 0.0417 seconds
+Current epoch 24 for run 2: val_loss: 1.0337, val_acc: 0.6900, test_acc 0.6810
+Best epoch 13 for run 2: val_loss: 0.9820, val_acc: 0.7140, test_acc 0.6960
+
+Run: 3
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9485, val_loss=1.8629, test_loss=1.8579, train_acc=0.1429, val_acc=0.5840, test_acc=0.5740
+Epoch 1: train_loss=1.6534, val_loss=1.7774, test_loss=1.7669, train_acc=0.9929, val_acc=0.6320, test_acc=0.6440
+Epoch 2: train_loss=1.3308, val_loss=1.6721, test_loss=1.6586, train_acc=0.9929, val_acc=0.6860, test_acc=0.6800
+Epoch 3: train_loss=1.0006, val_loss=1.5573, test_loss=1.5418, train_acc=1.0000, val_acc=0.7100, test_acc=0.6880
+Epoch 4: train_loss=0.6962, val_loss=1.4319, test_loss=1.4166, train_acc=1.0000, val_acc=0.7220, test_acc=0.6950
+Epoch 5: train_loss=0.4452, val_loss=1.3102, test_loss=1.2946, train_acc=1.0000, val_acc=0.7240, test_acc=0.7010
+Epoch 6: train_loss=0.2681, val_loss=1.1977, test_loss=1.1834, train_acc=1.0000, val_acc=0.7200, test_acc=0.7060
+Epoch 7: train_loss=0.1521, val_loss=1.1029, test_loss=1.0862, train_acc=1.0000, val_acc=0.7240, test_acc=0.7130
+Epoch 8: train_loss=0.0835, val_loss=1.0283, test_loss=1.0101, train_acc=1.0000, val_acc=0.7360, test_acc=0.7150
+Epoch 9: train_loss=0.0453, val_loss=0.9797, test_loss=0.9563, train_acc=1.0000, val_acc=0.7280, test_acc=0.7190
+Epoch 10: train_loss=0.0239, val_loss=0.9378, test_loss=0.9120, train_acc=1.0000, val_acc=0.7320, test_acc=0.7200
+Epoch 11: train_loss=0.0132, val_loss=0.9095, test_loss=0.8827, train_acc=1.0000, val_acc=0.7300, test_acc=0.7180
+Epoch 12: train_loss=0.0073, val_loss=0.8922, test_loss=0.8604, train_acc=1.0000, val_acc=0.7280, test_acc=0.7160
+Epoch 13: train_loss=0.0044, val_loss=0.8837, test_loss=0.8493, train_acc=1.0000, val_acc=0.7260, test_acc=0.7160
+Epoch 14: train_loss=0.0027, val_loss=0.8828, test_loss=0.8411, train_acc=1.0000, val_acc=0.7180, test_acc=0.7170
+Epoch 15: train_loss=0.0017, val_loss=0.8755, test_loss=0.8334, train_acc=1.0000, val_acc=0.7260, test_acc=0.7170
+Epoch 16: train_loss=0.0011, val_loss=0.8728, test_loss=0.8307, train_acc=1.0000, val_acc=0.7280, test_acc=0.7120
+Epoch 17: train_loss=0.0008, val_loss=0.8766, test_loss=0.8299, train_acc=1.0000, val_acc=0.7280, test_acc=0.7160
+Epoch 18: train_loss=0.0005, val_loss=0.8810, test_loss=0.8313, train_acc=1.0000, val_acc=0.7320, test_acc=0.7160
+Epoch 19: train_loss=0.0004, val_loss=0.8852, test_loss=0.8346, train_acc=1.0000, val_acc=0.7340, test_acc=0.7180
+Epoch 20: train_loss=0.0003, val_loss=0.8847, test_loss=0.8346, train_acc=1.0000, val_acc=0.7300, test_acc=0.7140
+Epoch 21: train_loss=0.0003, val_loss=0.8894, test_loss=0.8366, train_acc=1.0000, val_acc=0.7260, test_acc=0.7170
+Epoch 22: train_loss=0.0002, val_loss=0.8918, test_loss=0.8382, train_acc=1.0000, val_acc=0.7280, test_acc=0.7140
+Epoch 23: train_loss=0.0002, val_loss=0.9009, test_loss=0.8463, train_acc=1.0000, val_acc=0.7240, test_acc=0.7110
+Epoch 24: train_loss=0.0002, val_loss=0.9028, test_loss=0.8486, train_acc=1.0000, val_acc=0.7260, test_acc=0.7030
+Epoch 25: train_loss=0.0002, val_loss=0.9052, test_loss=0.8539, train_acc=1.0000, val_acc=0.7220, test_acc=0.7020
+Epoch 26: train_loss=0.0002, val_loss=0.9123, test_loss=0.8586, train_acc=1.0000, val_acc=0.7200, test_acc=0.7010
+Epoch 27: train_loss=0.0002, val_loss=0.9121, test_loss=0.8589, train_acc=1.0000, val_acc=0.7160, test_acc=0.6960
+Average running time of epoch: 0.0410 seconds
+Current epoch 27 for run 3: val_loss: 0.9121, val_acc: 0.7160, test_acc 0.6960
+Best epoch 16 for run 3: val_loss: 0.8728, val_acc: 0.7280, test_acc 0.7120
+
+Run: 4
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9520, val_loss=1.8581, test_loss=1.8562, train_acc=0.1429, val_acc=0.7040, test_acc=0.6750
+Epoch 1: train_loss=1.6633, val_loss=1.7472, test_loss=1.7399, train_acc=1.0000, val_acc=0.6980, test_acc=0.6960
+Epoch 2: train_loss=1.3564, val_loss=1.6491, test_loss=1.6384, train_acc=0.9929, val_acc=0.6900, test_acc=0.6990
+Epoch 3: train_loss=1.0308, val_loss=1.5525, test_loss=1.5386, train_acc=0.9929, val_acc=0.6900, test_acc=0.6890
+Epoch 4: train_loss=0.7254, val_loss=1.4566, test_loss=1.4393, train_acc=1.0000, val_acc=0.6940, test_acc=0.6840
+Epoch 5: train_loss=0.4730, val_loss=1.3655, test_loss=1.3459, train_acc=1.0000, val_acc=0.6940, test_acc=0.6780
+Epoch 6: train_loss=0.2885, val_loss=1.2826, test_loss=1.2633, train_acc=1.0000, val_acc=0.6880, test_acc=0.6750
+Epoch 7: train_loss=0.1656, val_loss=1.2101, test_loss=1.1891, train_acc=1.0000, val_acc=0.6960, test_acc=0.6700
+Epoch 8: train_loss=0.0924, val_loss=1.1510, test_loss=1.1266, train_acc=1.0000, val_acc=0.6960, test_acc=0.6700
+Epoch 9: train_loss=0.0501, val_loss=1.1039, test_loss=1.0790, train_acc=1.0000, val_acc=0.6960, test_acc=0.6720
+Epoch 10: train_loss=0.0272, val_loss=1.0696, test_loss=1.0396, train_acc=1.0000, val_acc=0.7020, test_acc=0.6750
+Epoch 11: train_loss=0.0148, val_loss=1.0421, test_loss=1.0101, train_acc=1.0000, val_acc=0.6960, test_acc=0.6760
+Epoch 12: train_loss=0.0084, val_loss=1.0267, test_loss=0.9895, train_acc=1.0000, val_acc=0.6940, test_acc=0.6770
+Epoch 13: train_loss=0.0050, val_loss=1.0165, test_loss=0.9759, train_acc=1.0000, val_acc=0.6980, test_acc=0.6780
+Epoch 14: train_loss=0.0031, val_loss=1.0079, test_loss=0.9656, train_acc=1.0000, val_acc=0.6980, test_acc=0.6790
+Epoch 15: train_loss=0.0019, val_loss=1.0057, test_loss=0.9595, train_acc=1.0000, val_acc=0.6960, test_acc=0.6800
+Epoch 16: train_loss=0.0012, val_loss=1.0031, test_loss=0.9553, train_acc=1.0000, val_acc=0.6980, test_acc=0.6830
+Epoch 17: train_loss=0.0009, val_loss=1.0016, test_loss=0.9520, train_acc=1.0000, val_acc=0.6960, test_acc=0.6850
+Epoch 18: train_loss=0.0006, val_loss=1.0059, test_loss=0.9534, train_acc=1.0000, val_acc=0.6940, test_acc=0.6850
+Epoch 19: train_loss=0.0005, val_loss=1.0056, test_loss=0.9514, train_acc=1.0000, val_acc=0.6920, test_acc=0.6830
+Epoch 20: train_loss=0.0004, val_loss=1.0060, test_loss=0.9516, train_acc=1.0000, val_acc=0.6900, test_acc=0.6830
+Epoch 21: train_loss=0.0003, val_loss=1.0114, test_loss=0.9555, train_acc=1.0000, val_acc=0.6900, test_acc=0.6790
+Epoch 22: train_loss=0.0003, val_loss=1.0126, test_loss=0.9575, train_acc=1.0000, val_acc=0.6860, test_acc=0.6760
+Epoch 23: train_loss=0.0002, val_loss=1.0115, test_loss=0.9531, train_acc=1.0000, val_acc=0.6860, test_acc=0.6780
+Epoch 24: train_loss=0.0002, val_loss=1.0142, test_loss=0.9588, train_acc=1.0000, val_acc=0.6860, test_acc=0.6750
+Epoch 25: train_loss=0.0002, val_loss=1.0153, test_loss=0.9563, train_acc=1.0000, val_acc=0.6900, test_acc=0.6730
+Epoch 26: train_loss=0.0002, val_loss=1.0143, test_loss=0.9582, train_acc=1.0000, val_acc=0.6920, test_acc=0.6750
+Epoch 27: train_loss=0.0002, val_loss=1.0142, test_loss=0.9598, train_acc=1.0000, val_acc=0.6900, test_acc=0.6740
+Epoch 28: train_loss=0.0002, val_loss=1.0215, test_loss=0.9640, train_acc=1.0000, val_acc=0.6780, test_acc=0.6700
+Average running time of epoch: 0.0431 seconds
+Current epoch 28 for run 4: val_loss: 1.0215, val_acc: 0.6780, test_acc 0.6700
+Best epoch 17 for run 4: val_loss: 1.0016, val_acc: 0.6960, test_acc 0.6850
+
+Run: 5
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9468, val_loss=1.8546, test_loss=1.8511, train_acc=0.1643, val_acc=0.5940, test_acc=0.6170
+Epoch 1: train_loss=1.6592, val_loss=1.7687, test_loss=1.7607, train_acc=1.0000, val_acc=0.6540, test_acc=0.6830
+Epoch 2: train_loss=1.3422, val_loss=1.6698, test_loss=1.6589, train_acc=1.0000, val_acc=0.7040, test_acc=0.7020
+Epoch 3: train_loss=1.0124, val_loss=1.5597, test_loss=1.5465, train_acc=1.0000, val_acc=0.6800, test_acc=0.6990
+Epoch 4: train_loss=0.7054, val_loss=1.4450, test_loss=1.4300, train_acc=1.0000, val_acc=0.6980, test_acc=0.6840
+Epoch 5: train_loss=0.4564, val_loss=1.3382, test_loss=1.3198, train_acc=1.0000, val_acc=0.6980, test_acc=0.6950
+Epoch 6: train_loss=0.2742, val_loss=1.2448, test_loss=1.2254, train_acc=1.0000, val_acc=0.7060, test_acc=0.6910
+Epoch 7: train_loss=0.1565, val_loss=1.1660, test_loss=1.1449, train_acc=1.0000, val_acc=0.7140, test_acc=0.6920
+Epoch 8: train_loss=0.0856, val_loss=1.1044, test_loss=1.0812, train_acc=1.0000, val_acc=0.7120, test_acc=0.6930
+Epoch 9: train_loss=0.0463, val_loss=1.0605, test_loss=1.0296, train_acc=1.0000, val_acc=0.7140, test_acc=0.6910
+Epoch 10: train_loss=0.0245, val_loss=1.0284, test_loss=0.9948, train_acc=1.0000, val_acc=0.7080, test_acc=0.6860
+Epoch 11: train_loss=0.0134, val_loss=1.0051, test_loss=0.9672, train_acc=1.0000, val_acc=0.7120, test_acc=0.6860
+Epoch 12: train_loss=0.0075, val_loss=0.9962, test_loss=0.9526, train_acc=1.0000, val_acc=0.7060, test_acc=0.6870
+Epoch 13: train_loss=0.0043, val_loss=0.9855, test_loss=0.9390, train_acc=1.0000, val_acc=0.7080, test_acc=0.6810
+Epoch 14: train_loss=0.0026, val_loss=0.9848, test_loss=0.9344, train_acc=1.0000, val_acc=0.7060, test_acc=0.6800
+Epoch 15: train_loss=0.0017, val_loss=0.9812, test_loss=0.9277, train_acc=1.0000, val_acc=0.7080, test_acc=0.6840
+Epoch 16: train_loss=0.0011, val_loss=0.9869, test_loss=0.9288, train_acc=1.0000, val_acc=0.6940, test_acc=0.6800
+Epoch 17: train_loss=0.0008, val_loss=0.9839, test_loss=0.9254, train_acc=1.0000, val_acc=0.6980, test_acc=0.6820
+Epoch 18: train_loss=0.0006, val_loss=0.9932, test_loss=0.9321, train_acc=1.0000, val_acc=0.6920, test_acc=0.6760
+Epoch 19: train_loss=0.0004, val_loss=1.0004, test_loss=0.9350, train_acc=1.0000, val_acc=0.6900, test_acc=0.6770
+Epoch 20: train_loss=0.0003, val_loss=1.0002, test_loss=0.9342, train_acc=1.0000, val_acc=0.6900, test_acc=0.6740
+Epoch 21: train_loss=0.0003, val_loss=1.0051, test_loss=0.9389, train_acc=1.0000, val_acc=0.6860, test_acc=0.6740
+Epoch 22: train_loss=0.0002, val_loss=1.0069, test_loss=0.9406, train_acc=1.0000, val_acc=0.6860, test_acc=0.6770
+Epoch 23: train_loss=0.0002, val_loss=1.0112, test_loss=0.9470, train_acc=1.0000, val_acc=0.6860, test_acc=0.6730
+Epoch 24: train_loss=0.0002, val_loss=1.0126, test_loss=0.9473, train_acc=1.0000, val_acc=0.6820, test_acc=0.6750
+Epoch 25: train_loss=0.0002, val_loss=1.0187, test_loss=0.9508, train_acc=1.0000, val_acc=0.6800, test_acc=0.6750
+Epoch 26: train_loss=0.0002, val_loss=1.0197, test_loss=0.9555, train_acc=1.0000, val_acc=0.6800, test_acc=0.6760
+Average running time of epoch: 0.0429 seconds
+Current epoch 26 for run 5: val_loss: 1.0197, val_acc: 0.6800, test_acc 0.6760
+Best epoch 15 for run 5: val_loss: 0.9812, val_acc: 0.7080, test_acc 0.6840
+
+Run: 6
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9478, val_loss=1.8645, test_loss=1.8590, train_acc=0.1429, val_acc=0.5200, test_acc=0.5730
+Epoch 1: train_loss=1.6558, val_loss=1.7694, test_loss=1.7586, train_acc=0.9929, val_acc=0.6460, test_acc=0.6750
+Epoch 2: train_loss=1.3379, val_loss=1.6662, test_loss=1.6521, train_acc=1.0000, val_acc=0.6960, test_acc=0.7120
+Epoch 3: train_loss=1.0075, val_loss=1.5483, test_loss=1.5348, train_acc=1.0000, val_acc=0.7120, test_acc=0.7170
+Epoch 4: train_loss=0.7048, val_loss=1.4325, test_loss=1.4200, train_acc=1.0000, val_acc=0.7100, test_acc=0.7050
+Epoch 5: train_loss=0.4535, val_loss=1.3250, test_loss=1.3122, train_acc=1.0000, val_acc=0.7100, test_acc=0.6910
+Epoch 6: train_loss=0.2752, val_loss=1.2262, test_loss=1.2126, train_acc=1.0000, val_acc=0.7020, test_acc=0.6820
+Epoch 7: train_loss=0.1568, val_loss=1.1453, test_loss=1.1285, train_acc=1.0000, val_acc=0.7040, test_acc=0.6830
+Epoch 8: train_loss=0.0856, val_loss=1.0795, test_loss=1.0603, train_acc=1.0000, val_acc=0.7040, test_acc=0.6880
+Epoch 9: train_loss=0.0449, val_loss=1.0290, test_loss=1.0057, train_acc=1.0000, val_acc=0.7120, test_acc=0.6960
+Epoch 10: train_loss=0.0240, val_loss=0.9913, test_loss=0.9638, train_acc=1.0000, val_acc=0.7180, test_acc=0.7020
+Epoch 11: train_loss=0.0132, val_loss=0.9640, test_loss=0.9338, train_acc=1.0000, val_acc=0.7240, test_acc=0.7060
+Epoch 12: train_loss=0.0074, val_loss=0.9416, test_loss=0.9074, train_acc=1.0000, val_acc=0.7180, test_acc=0.7100
+Epoch 13: train_loss=0.0043, val_loss=0.9342, test_loss=0.8957, train_acc=1.0000, val_acc=0.7160, test_acc=0.7130
+Epoch 14: train_loss=0.0026, val_loss=0.9248, test_loss=0.8849, train_acc=1.0000, val_acc=0.7160, test_acc=0.7080
+Epoch 15: train_loss=0.0016, val_loss=0.9265, test_loss=0.8826, train_acc=1.0000, val_acc=0.7160, test_acc=0.7070
+Epoch 16: train_loss=0.0011, val_loss=0.9247, test_loss=0.8789, train_acc=1.0000, val_acc=0.7180, test_acc=0.7070
+Epoch 17: train_loss=0.0007, val_loss=0.9264, test_loss=0.8767, train_acc=1.0000, val_acc=0.7100, test_acc=0.7060
+Epoch 18: train_loss=0.0006, val_loss=0.9245, test_loss=0.8764, train_acc=1.0000, val_acc=0.7140, test_acc=0.7080
+Epoch 19: train_loss=0.0004, val_loss=0.9318, test_loss=0.8809, train_acc=1.0000, val_acc=0.7000, test_acc=0.7030
+Epoch 20: train_loss=0.0003, val_loss=0.9349, test_loss=0.8845, train_acc=1.0000, val_acc=0.7020, test_acc=0.6990
+Epoch 21: train_loss=0.0003, val_loss=0.9382, test_loss=0.8876, train_acc=1.0000, val_acc=0.6980, test_acc=0.6990
+Epoch 22: train_loss=0.0002, val_loss=0.9475, test_loss=0.8932, train_acc=1.0000, val_acc=0.7020, test_acc=0.6990
+Epoch 23: train_loss=0.0002, val_loss=0.9478, test_loss=0.8955, train_acc=1.0000, val_acc=0.7020, test_acc=0.6950
+Epoch 24: train_loss=0.0002, val_loss=0.9555, test_loss=0.9016, train_acc=1.0000, val_acc=0.7000, test_acc=0.6950
+Epoch 25: train_loss=0.0002, val_loss=0.9590, test_loss=0.9034, train_acc=1.0000, val_acc=0.6960, test_acc=0.6900
+Epoch 26: train_loss=0.0002, val_loss=0.9637, test_loss=0.9111, train_acc=1.0000, val_acc=0.6960, test_acc=0.6890
+Epoch 27: train_loss=0.0002, val_loss=0.9663, test_loss=0.9119, train_acc=1.0000, val_acc=0.6980, test_acc=0.6850
+Epoch 28: train_loss=0.0002, val_loss=0.9724, test_loss=0.9195, train_acc=1.0000, val_acc=0.6880, test_acc=0.6830
+Epoch 29: train_loss=0.0002, val_loss=0.9745, test_loss=0.9227, train_acc=1.0000, val_acc=0.6880, test_acc=0.6790
+Average running time of epoch: 0.0413 seconds
+Current epoch 29 for run 6: val_loss: 0.9745, val_acc: 0.6880, test_acc 0.6790
+Best epoch 18 for run 6: val_loss: 0.9245, val_acc: 0.7140, test_acc 0.7080
+
+Run: 7
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9512, val_loss=1.8762, test_loss=1.8705, train_acc=0.1429, val_acc=0.2560, test_acc=0.2610
+Epoch 1: train_loss=1.6677, val_loss=1.7944, test_loss=1.7845, train_acc=0.9500, val_acc=0.5600, test_acc=0.5580
+Epoch 2: train_loss=1.3557, val_loss=1.6883, test_loss=1.6761, train_acc=1.0000, val_acc=0.6720, test_acc=0.6640
+Epoch 3: train_loss=1.0303, val_loss=1.5664, test_loss=1.5539, train_acc=1.0000, val_acc=0.7140, test_acc=0.6970
+Epoch 4: train_loss=0.7228, val_loss=1.4406, test_loss=1.4284, train_acc=1.0000, val_acc=0.7340, test_acc=0.7110
+Epoch 5: train_loss=0.4714, val_loss=1.3243, test_loss=1.3106, train_acc=1.0000, val_acc=0.7120, test_acc=0.7070
+Epoch 6: train_loss=0.2875, val_loss=1.2191, test_loss=1.2060, train_acc=1.0000, val_acc=0.7160, test_acc=0.7090
+Epoch 7: train_loss=0.1648, val_loss=1.1346, test_loss=1.1193, train_acc=1.0000, val_acc=0.7300, test_acc=0.7030
+Epoch 8: train_loss=0.0916, val_loss=1.0685, test_loss=1.0517, train_acc=1.0000, val_acc=0.7240, test_acc=0.7130
+Epoch 9: train_loss=0.0495, val_loss=1.0176, test_loss=0.9980, train_acc=1.0000, val_acc=0.7220, test_acc=0.7130
+Epoch 10: train_loss=0.0262, val_loss=0.9791, test_loss=0.9580, train_acc=1.0000, val_acc=0.7200, test_acc=0.7140
+Epoch 11: train_loss=0.0145, val_loss=0.9546, test_loss=0.9303, train_acc=1.0000, val_acc=0.7280, test_acc=0.7130
+Epoch 12: train_loss=0.0082, val_loss=0.9407, test_loss=0.9134, train_acc=1.0000, val_acc=0.7260, test_acc=0.7100
+Epoch 13: train_loss=0.0048, val_loss=0.9286, test_loss=0.8985, train_acc=1.0000, val_acc=0.7240, test_acc=0.7070
+Epoch 14: train_loss=0.0029, val_loss=0.9246, test_loss=0.8911, train_acc=1.0000, val_acc=0.7220, test_acc=0.7080
+Epoch 15: train_loss=0.0018, val_loss=0.9230, test_loss=0.8878, train_acc=1.0000, val_acc=0.7280, test_acc=0.7080
+Epoch 16: train_loss=0.0012, val_loss=0.9242, test_loss=0.8859, train_acc=1.0000, val_acc=0.7220, test_acc=0.7080
+Epoch 17: train_loss=0.0009, val_loss=0.9230, test_loss=0.8850, train_acc=1.0000, val_acc=0.7200, test_acc=0.7060
+Epoch 18: train_loss=0.0006, val_loss=0.9315, test_loss=0.8905, train_acc=1.0000, val_acc=0.7180, test_acc=0.6990
+Epoch 19: train_loss=0.0005, val_loss=0.9341, test_loss=0.8924, train_acc=1.0000, val_acc=0.7120, test_acc=0.7010
+Epoch 20: train_loss=0.0004, val_loss=0.9371, test_loss=0.8944, train_acc=1.0000, val_acc=0.7160, test_acc=0.6980
+Epoch 21: train_loss=0.0003, val_loss=0.9395, test_loss=0.8972, train_acc=1.0000, val_acc=0.7120, test_acc=0.6950
+Epoch 22: train_loss=0.0003, val_loss=0.9455, test_loss=0.8998, train_acc=1.0000, val_acc=0.7140, test_acc=0.6900
+Epoch 23: train_loss=0.0002, val_loss=0.9492, test_loss=0.9024, train_acc=1.0000, val_acc=0.7120, test_acc=0.6940
+Epoch 24: train_loss=0.0002, val_loss=0.9508, test_loss=0.9045, train_acc=1.0000, val_acc=0.7100, test_acc=0.6900
+Epoch 25: train_loss=0.0002, val_loss=0.9536, test_loss=0.9078, train_acc=1.0000, val_acc=0.7060, test_acc=0.6890
+Epoch 26: train_loss=0.0002, val_loss=0.9557, test_loss=0.9103, train_acc=1.0000, val_acc=0.7040, test_acc=0.6870
+Epoch 27: train_loss=0.0002, val_loss=0.9584, test_loss=0.9116, train_acc=1.0000, val_acc=0.7060, test_acc=0.6840
+Epoch 28: train_loss=0.0002, val_loss=0.9612, test_loss=0.9167, train_acc=1.0000, val_acc=0.7020, test_acc=0.6820
+Average running time of epoch: 0.0422 seconds
+Current epoch 28 for run 7: val_loss: 0.9612, val_acc: 0.7020, test_acc 0.6820
+Best epoch 17 for run 7: val_loss: 0.9230, val_acc: 0.7200, test_acc 0.7060
+
+Run: 8
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9471, val_loss=1.8676, test_loss=1.8667, train_acc=0.1357, val_acc=0.3960, test_acc=0.4050
+Epoch 1: train_loss=1.6505, val_loss=1.7770, test_loss=1.7721, train_acc=0.9286, val_acc=0.6100, test_acc=0.6080
+Epoch 2: train_loss=1.3281, val_loss=1.6677, test_loss=1.6564, train_acc=1.0000, val_acc=0.7000, test_acc=0.6920
+Epoch 3: train_loss=0.9982, val_loss=1.5421, test_loss=1.5285, train_acc=1.0000, val_acc=0.7320, test_acc=0.7170
+Epoch 4: train_loss=0.6954, val_loss=1.4126, test_loss=1.3978, train_acc=1.0000, val_acc=0.7480, test_acc=0.7180
+Epoch 5: train_loss=0.4493, val_loss=1.2962, test_loss=1.2807, train_acc=1.0000, val_acc=0.7480, test_acc=0.7160
+Epoch 6: train_loss=0.2723, val_loss=1.1960, test_loss=1.1800, train_acc=1.0000, val_acc=0.7340, test_acc=0.7170
+Epoch 7: train_loss=0.1553, val_loss=1.1092, test_loss=1.0963, train_acc=1.0000, val_acc=0.7280, test_acc=0.7140
+Epoch 8: train_loss=0.0846, val_loss=1.0448, test_loss=1.0290, train_acc=1.0000, val_acc=0.7240, test_acc=0.7180
+Epoch 9: train_loss=0.0461, val_loss=0.9946, test_loss=0.9760, train_acc=1.0000, val_acc=0.7260, test_acc=0.7130
+Epoch 10: train_loss=0.0249, val_loss=0.9616, test_loss=0.9389, train_acc=1.0000, val_acc=0.7220, test_acc=0.7160
+Epoch 11: train_loss=0.0137, val_loss=0.9399, test_loss=0.9145, train_acc=1.0000, val_acc=0.7200, test_acc=0.7110
+Epoch 12: train_loss=0.0078, val_loss=0.9266, test_loss=0.8960, train_acc=1.0000, val_acc=0.7180, test_acc=0.7140
+Epoch 13: train_loss=0.0045, val_loss=0.9202, test_loss=0.8852, train_acc=1.0000, val_acc=0.7180, test_acc=0.7100
+Epoch 14: train_loss=0.0028, val_loss=0.9176, test_loss=0.8775, train_acc=1.0000, val_acc=0.7180, test_acc=0.7100
+Epoch 15: train_loss=0.0018, val_loss=0.9124, test_loss=0.8709, train_acc=1.0000, val_acc=0.7180, test_acc=0.7120
+Epoch 16: train_loss=0.0012, val_loss=0.9161, test_loss=0.8708, train_acc=1.0000, val_acc=0.7160, test_acc=0.7110
+Epoch 17: train_loss=0.0008, val_loss=0.9153, test_loss=0.8701, train_acc=1.0000, val_acc=0.7140, test_acc=0.7110
+Epoch 18: train_loss=0.0006, val_loss=0.9198, test_loss=0.8713, train_acc=1.0000, val_acc=0.7100, test_acc=0.7080
+Epoch 19: train_loss=0.0005, val_loss=0.9242, test_loss=0.8761, train_acc=1.0000, val_acc=0.7100, test_acc=0.7030
+Epoch 20: train_loss=0.0004, val_loss=0.9295, test_loss=0.8793, train_acc=1.0000, val_acc=0.7020, test_acc=0.6970
+Epoch 21: train_loss=0.0003, val_loss=0.9293, test_loss=0.8796, train_acc=1.0000, val_acc=0.7080, test_acc=0.6940
+Epoch 22: train_loss=0.0003, val_loss=0.9337, test_loss=0.8831, train_acc=1.0000, val_acc=0.7060, test_acc=0.6980
+Epoch 23: train_loss=0.0002, val_loss=0.9415, test_loss=0.8898, train_acc=1.0000, val_acc=0.7020, test_acc=0.6940
+Epoch 24: train_loss=0.0002, val_loss=0.9436, test_loss=0.8904, train_acc=1.0000, val_acc=0.7020, test_acc=0.6950
+Epoch 25: train_loss=0.0002, val_loss=0.9434, test_loss=0.8923, train_acc=1.0000, val_acc=0.7000, test_acc=0.6870
+Epoch 26: train_loss=0.0002, val_loss=0.9447, test_loss=0.8944, train_acc=1.0000, val_acc=0.7000, test_acc=0.6900
+Average running time of epoch: 0.0424 seconds
+Current epoch 26 for run 8: val_loss: 0.9447, val_acc: 0.7000, test_acc 0.6900
+Best epoch 15 for run 8: val_loss: 0.9124, val_acc: 0.7180, test_acc 0.7120
+
+Run: 9
+Using GPU: 0
+FE_GNN(
+  (basis_generator): Basis_Generator(
+    (mp): MP()
+  )
+  (lin_lxs): ModuleList(
+    (0): Linear(in_features=1433, out_features=64, bias=True)
+    (1): Linear(in_features=1433, out_features=64, bias=True)
+    (2): Linear(in_features=1433, out_features=64, bias=True)
+  )
+  (lin_x): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_lx): Linear(in_features=1433, out_features=64, bias=True)
+  (lin_l): Linear(in_features=50, out_features=64, bias=True)
+  (cls): Linear(in_features=64, out_features=7, bias=True)
+)
+Model Parameter: 462602
+Using Adam
+Epoch 0: train_loss=1.9542, val_loss=1.8675, test_loss=1.8654, train_acc=0.1286, val_acc=0.4720, test_acc=0.4450
+Epoch 1: train_loss=1.6634, val_loss=1.7954, test_loss=1.7873, train_acc=0.9571, val_acc=0.6060, test_acc=0.6000
+Epoch 2: train_loss=1.3550, val_loss=1.6964, test_loss=1.6825, train_acc=1.0000, val_acc=0.6140, test_acc=0.6030
+Epoch 3: train_loss=1.0323, val_loss=1.5832, test_loss=1.5655, train_acc=1.0000, val_acc=0.6400, test_acc=0.6370
+Epoch 4: train_loss=0.7338, val_loss=1.4584, test_loss=1.4411, train_acc=1.0000, val_acc=0.6780, test_acc=0.6560
+Epoch 5: train_loss=0.4830, val_loss=1.3344, test_loss=1.3161, train_acc=1.0000, val_acc=0.6940, test_acc=0.6800
+Epoch 6: train_loss=0.2985, val_loss=1.2290, test_loss=1.2124, train_acc=1.0000, val_acc=0.7040, test_acc=0.6840
+Epoch 7: train_loss=0.1737, val_loss=1.1393, test_loss=1.1232, train_acc=1.0000, val_acc=0.7220, test_acc=0.6990
+Epoch 8: train_loss=0.0979, val_loss=1.0722, test_loss=1.0538, train_acc=1.0000, val_acc=0.7240, test_acc=0.6970
+Epoch 9: train_loss=0.0539, val_loss=1.0205, test_loss=1.0012, train_acc=1.0000, val_acc=0.7200, test_acc=0.6920
+Epoch 10: train_loss=0.0299, val_loss=0.9901, test_loss=0.9685, train_acc=1.0000, val_acc=0.7160, test_acc=0.6900
+Epoch 11: train_loss=0.0164, val_loss=0.9683, test_loss=0.9463, train_acc=1.0000, val_acc=0.7180, test_acc=0.6880
+Epoch 12: train_loss=0.0092, val_loss=0.9524, test_loss=0.9249, train_acc=1.0000, val_acc=0.7200, test_acc=0.6900
+Epoch 13: train_loss=0.0055, val_loss=0.9465, test_loss=0.9164, train_acc=1.0000, val_acc=0.7180, test_acc=0.6880
+Epoch 14: train_loss=0.0033, val_loss=0.9465, test_loss=0.9118, train_acc=1.0000, val_acc=0.7100, test_acc=0.6900
+Epoch 15: train_loss=0.0021, val_loss=0.9476, test_loss=0.9107, train_acc=1.0000, val_acc=0.7140, test_acc=0.6840
+Epoch 16: train_loss=0.0014, val_loss=0.9497, test_loss=0.9094, train_acc=1.0000, val_acc=0.7100, test_acc=0.6870
+Epoch 17: train_loss=0.0010, val_loss=0.9530, test_loss=0.9123, train_acc=1.0000, val_acc=0.7060, test_acc=0.6850
+Epoch 18: train_loss=0.0007, val_loss=0.9595, test_loss=0.9171, train_acc=1.0000, val_acc=0.7060, test_acc=0.6840
+Epoch 19: train_loss=0.0005, val_loss=0.9633, test_loss=0.9191, train_acc=1.0000, val_acc=0.6940, test_acc=0.6840
+Epoch 20: train_loss=0.0004, val_loss=0.9700, test_loss=0.9216, train_acc=1.0000, val_acc=0.6940, test_acc=0.6790
+Epoch 21: train_loss=0.0003, val_loss=0.9720, test_loss=0.9268, train_acc=1.0000, val_acc=0.6980, test_acc=0.6790
+Epoch 22: train_loss=0.0003, val_loss=0.9788, test_loss=0.9302, train_acc=1.0000, val_acc=0.6940, test_acc=0.6790
+Epoch 23: train_loss=0.0002, val_loss=0.9812, test_loss=0.9359, train_acc=1.0000, val_acc=0.6900, test_acc=0.6780
+Epoch 24: train_loss=0.0002, val_loss=0.9888, test_loss=0.9392, train_acc=1.0000, val_acc=0.6900, test_acc=0.6730
+Average running time of epoch: 0.0422 seconds
+Current epoch 24 for run 9: val_loss: 0.9888, val_acc: 0.6900, test_acc 0.6730
+Best epoch 13 for run 9: val_loss: 0.9465, val_acc: 0.7180, test_acc 0.6880
+Average Accuracy for Cora: Test_Acc:0.6947, Val_Acc:0.7106
